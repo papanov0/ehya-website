@@ -1,11 +1,244 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>Магазин модной одежды Ehya</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <nav class="container navbar-top">
+        <a href="#" class="logo">
+          <img
+            src="img/logo.svg"
+            alt="Logo: Best Tour Plan"
+            class="logo__image"
+          />
+        </a>
+        <ul class="menu navbar__menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Главная </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Новинки </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Тренды </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Отзывы </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Контакты </a>
+          </li>
+          <li class="menu__item menu__item--button">
+            <a href="#" class="menu__link menu__link--button"> Войти </a>
+          </li>
+        </ul>
+
+        <!-- /.user -->
+        <button class="menu-button navbar-top__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+        <!-- / кнопка мобильного меню -->
+      </nav>
+      <!-- /.container -->
+    </header>
+    <!-- /.navbar -->
+
+    <section class="hero">
+      <div class="hero-block">
+        <div class="container hero-container">
+          <div class="hero-container__wrapper">
+            <span class="hero-container__hashtag"># ready to be cool</span>
+            <h1 class="hero-container__title">
+              Каждый может быть крутым и модным 
+            </h1>
+            <p class="hero-container__text">
+              Чтобы быть в тренде и стать модным, вам нужно носить отличную
+              оджеду и обновлять свой стиль. Всё это вы можете найти здесь.
+              Нчните сейчас.
+            </p>
+            <button class="button hero-container__button">
+              Подобрать одежду
+            </button>
+            <ul class="hero-container__list">
+              <li class="hero-container__item">
+                <div class="hero-container__image">
+                  <img class="image" src="img/Donation.svg" alt="" />
+                </div>
+                <span class="hero-container__text-list">Онлайн оплата</span>
+              </li>
+              <li class="hero-container__item">
+                <div class="hero-container__image">
+                  <img class="image" src="img/Icon_Protection.svg" alt="" />
+                </div>
+                <span class="hero-container__text-list">Гарантия</span>
+              </li>
+              <li class="hero-container__item">
+                <div class="hero-container__image">
+                  <img class="image" src="img/Icon_Like.svg" alt="" />
+                </div>
+                <span class="hero-container__text-list">Качество</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.conainer -->
+      </div>
+      <!-- /.hero-block -->
+    </section>
+    <!-- /.hero -->
+
+    <section class="new-collection">
+      <div class="container new-collection__container">
+        <div class="new-collection__container-images">
+          <div class="new-collection__image">
+            <img src="img/Base.jpg" alt="" class="new-collection__image-item">
+          </div>
+          <div class="new-collection__image">
+            <img src="img/Base-2.jpg" alt="" class="new-collection__image-item new-collection__image-item--mb-3">
+            <img src="img/Base-1.jpg" alt="" class="new-collection__image-item">
+          </div>
+        </div>
+        <!-- /.new-collection__image -->
+        <div class="new-collection__text">
+          <h2 class="new-collection__text-title">Новая зимняя коллекция</h2>
+          <p class="new-collection__text-block">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии. Используйте код EHYA20, чтобы получить 20% скидку.</p>
+          <div class="new-collection__text-wrapper">
+            <a href="#" class="new-collection__text-link">Посмотреть коллекцию</a>
+            <a href="#" class="new-collection__text-button">
+              <img src="img/arrow.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <!-- /.new-collection__text -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.new-collection -->
+
+    <section class="trends">
+      <div class="container">
+        <div class="nav trends__nav">
+          <h2 class="nav__title">Тренды</h2>
+          <div class="nav__wrapper">
+            <span class="nav__item nav__item--bold">Новинки</span>
+            <span class="nav__item">Лучшее</span>
+            <span class="nav__item">Скоро</span>
+          </div>
+        </div>
+        <div class="trends__cards-wrapper card">
+          <div class="card__item">
+            <img src="img/model.jpg" alt="" class="card__img">
+            <div class="card__wrapper card__wrapper--mb-10">
+              <span class="card__title">Minimalist Style</span>
+            </div>
+            <div class="card__wrapper">
+              <span class="card__price">$25.7 </span>
+              <img src="img/shopping-cart.svg" alt="" class="card__basket">
+            </div>
+          </div>
+          <div class="card__item">
+            <img src="img/model-1.jpg" alt="" class="card__img">
+            <div class="card__wrapper card__wrapper--mb-10">
+              <span class="card__title">Luxury Gown</span>
+            </div>
+            <div class="card__wrapper">
+              <span class="card__price">$30.6 </span>
+              <img src="img/shopping-cart.svg" alt="" class="card__basket">
+            </div>
+          </div>
+          <div class="card__item">
+            <img src="img/model-2.jpg" alt="" class="card__img">
+            <div class="card__wrapper card__wrapper--mb-10">
+              <span class="card__title">Full Coloristyn</span>
+            </div>
+            <div class="card__wrapper">
+              <span class="card__price">$25.7 </span>
+              <img src="img/shopping-cart.svg" alt="" class="card__basket">
+            </div>
+          </div>
+          <div class="card__item">
+            <img src="img/model-3.jpg" alt="" class="card__img">
+            <div class="card__wrapper card__wrapper--mb-10">
+              <span class="card__title">Pinky Winky</span>
+            </div>
+            <div class="card__wrapper">
+              <span class="card__price">$109 </span>
+              <img src="img/shopping-cart.svg" alt="" class="card__basket">
+            </div>
+          </div>
+          <div class="card__item">
+            <img src="img/model-4.jpg" alt="" class="card__img">
+            <div class="card__wrapper card__wrapper--mb-10">
+              <span class="card__title">Holiday Vibes</span>
+            </div>
+            <div class="card__wrapper">
+              <span class="card__price">$51.2 </span>
+              <img src="img/shopping-cart.svg" alt="" class="card__basket">
+            </div>
+          </div>
+          <div class="card__item">
+            <img src="img/model-5.jpg" alt="" class="card__img">
+            <div class="card__wrapper card__wrapper--mb-10">
+              <span class="card__title">Swaggie Shaggy</span>
+            </div>
+            <div class="card__wrapper">
+              <span class="card__price">$81.3</span>
+              <img src="img/shopping-cart.svg" alt="" class="card__basket">
+            </div>
+          </div>
+          <div class="card__item">
+            <img src="img/model-6.jpg" alt="" class="card__img">
+            <div class="card__wrapper">
+              <span class="card__title card__wrapper--mb-10">Red Formal</span>
+            </div>
+            <div class="card__wrapper">
+              <span class="card__price">$66.8 </span>
+              <img src="img/shopping-cart.svg" alt="" class="card__basket">
+            </div>
+          </div>
+          <div class="card__item card__item--more">
+            <img src="img/plus.svg" alt="" class="card__img--more">
+            <span class="card__title--more">Смотреть больше коллекций</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+      
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+      </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.reviews -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

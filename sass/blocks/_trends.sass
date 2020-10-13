@@ -1,0 +1,72 @@
+.trends
+  &__nav
+    display: flex
+    justify-content: space-between
+    margin-bottom: 13px
+    align-items: center
+  &__cards-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.nav
+  &__title
+    font-size: 48px
+    line-height: 60px
+    +bold
+  &__item
+    margin-right: 38px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    &:first-child
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      line-height: 25px
+    &:last-child
+      margin-right: 0
+
+.card
+  &__item
+    display: flex
+    flex-direction: column
+    &:nth-child(-n+4)
+      margin-bottom: 50px
+    &--more
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 260px
+      height: 350px
+      border-radius: 8px
+      background-color: $color-blue
+  &__img
+    border-radius: 8px
+    margin-bottom: 20px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    width: 100%
+    max-width: 240px
+    margin: 0 auto 0 auto
+    &--mb-10
+      margin-bottom: 15px
+  &__title
+    font-size: 24px
+    line-height: 32px
+    +bold
+    &--more
+      display: inline-block
+      text-align: center
+      font-size: 24px
+      line-height: 32px
+      margin: 26px auto 0 auto
+      color: #ffffff 
+      +bold
+  &__price
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px

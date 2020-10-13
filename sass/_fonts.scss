@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'hkgrotesk-regular';
+  src: url('../fonts/HKGrotesk/hkgrotesk-regular-web.eot');
+  src: url('../fonts/HKGrotesk/hkgrotesk-regular-web.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HKGrotesk/hkgrotesk-regular-web.woff') format('woff'),
+  url('../fonts/HKGrotesk/hkgrotesk-regular-web.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hkgrotesk-medium';
+  src: url('../fonts/HKGrotesk/hkgrotesk-medium-web.eot'),
+  url('../fonts/HKGrotesk/hkgrotesk-medium-web.woff') format('woff'),
+  url('../fonts/HKGrotesk/hkgrotesk-medium-web.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'hkgrotesk-bold';
+  src: url('../fonts/HKGrotesk/hkgrotesk-bold-web.eot'),
+  url('../fonts/HKGrotesk/hkgrotesk-bold-web.woff') format('woff'),
+  url('../fonts/HKGrotesk/hkgrotesk-bold-web.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin reg {
+  font-family: 'hkgrotesk-bold', sans-serif;
+  font-weight: 400;
+}
+@mixin med {
+  font-family: 'hkgrotesk-medium', sans-serif;
+  font-weight: 500;
+}
+@mixin bold {
+  font-family: 'hkgrotesk-bold', sans-serif;
+  font-weight: 700;
+}
