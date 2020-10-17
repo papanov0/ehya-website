@@ -1,0 +1,33 @@
+.reviews
+  &-container
+    width: 800px
+    overflow: hidden
+    margin: auto
+  &-slide
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+
+.swiper
+  &-slide
+    &__quote
+      margin-bottom: 14px
+    &__text
+      margin-bottom: 8px
+      font-size: 20px
+      line-height: 42px
+      +reg
+    &__title
+      margin-bottom: 67px
+      font-size: 20px
+      line-height: 24px
+      +bold
+  &-pagination
+    &-bullet
+      width: 5px
+      height: 5px
+      margin: 0 8px
+      &-active
+        background-color: $color-text
+        

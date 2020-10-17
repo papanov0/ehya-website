@@ -1,8 +1,11 @@
 .trends
+  padding-bottom: 152px
+  &-container
+    max-width: 1130px
+    margin: auto
   &__nav
     display: flex
     justify-content: space-between
-    margin-bottom: 13px
     align-items: center
   &__cards-wrapper
     display: flex
@@ -13,9 +16,10 @@
   &__title
     font-size: 48px
     line-height: 60px
+    margin-bottom: 51px
     +bold
   &__item
-    margin-right: 38px
+    margin-right: 33px
     font-style: normal
     font-weight: normal
     font-size: 18px
@@ -30,21 +34,35 @@
 
 .card
   &__item
+    position: relative
     display: flex
     flex-direction: column
+    
+    &--none-1
+      display: none
+    &--none-2
+      display: none
+    &--none-3
+      display: none
     &:nth-child(-n+4)
       margin-bottom: 50px
-    &--more
-      display: flex
-      justify-content: center
-      align-items: center
-      width: 260px
-      height: 350px
+    &-more
+      text-align: center
+      max-width: 280px
+      margin-left: 20px
+      position: absolute
+      text-decoration: none
+    &-background
       border-radius: 8px
-      background-color: $color-blue
+      
+      
   &__img
     border-radius: 8px
     margin-bottom: 20px
+    &-more
+      margin-top: 124px
+      margin-bottom: 15px
+      cursor: pointer
   &__wrapper
     display: flex
     justify-content: space-between
@@ -52,17 +70,18 @@
     max-width: 240px
     margin: 0 auto 0 auto
     &--mb-10
-      margin-bottom: 15px
+      margin-bottom: 6px
   &__title
     font-size: 24px
     line-height: 32px
     +bold
-    &--more
+    &-more
       display: inline-block
       text-align: center
+      max-width: 222px
       font-size: 24px
       line-height: 32px
-      margin: 26px auto 0 auto
+      margin: 9px auto 0 auto
       color: #ffffff 
       +bold
   &__price
@@ -70,3 +89,5 @@
     font-weight: normal
     font-size: 20px
     line-height: 36px
+  &__basket
+    cursor: pointer
